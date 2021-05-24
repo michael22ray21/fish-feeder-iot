@@ -19,6 +19,7 @@ class ReviewInput extends React.Component {
         labels: [
           "Monday",
           "Tuesday",
+          "Wednesday",
           "Thursday",
           "Friday",
           "Saturday",
@@ -28,7 +29,7 @@ class ReviewInput extends React.Component {
           {
             backgroundColor: "rgb(255, 99, 132)",
             borderColor: "rgb(255, 99, 132)",
-            data: [0, 253, 545, 730, 1050, 1230, 1250],
+            data: [0, 0, 0, 0, 0, 0, 0],
           },
         ],
       },
@@ -49,6 +50,7 @@ class ReviewInput extends React.Component {
         labels: [
           "Monday",
           "Tuesday",
+          "Wednesday",
           "Thursday",
           "Friday",
           "Saturday",
@@ -58,7 +60,7 @@ class ReviewInput extends React.Component {
           {
             backgroundColor: "rgb(255, 99, 132)",
             borderColor: "rgb(255, 99, 132)",
-            data: [20, 23, 25, 22, 21, 25, 26],
+            data: [0, 0, 0, 0, 0, 0, 0],
           },
         ],
       },
