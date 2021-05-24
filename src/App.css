@@ -1,38 +1,147 @@
 .App {
   text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.space-evenly {
+  align-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.spacer {
+  width: 35vw;
+}
+
+.spacer-small {
+  width: 5vw;
+}
+
+.turbidity-chart {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 50px;
+  width: 40vw;
+  height: 40vh;
+}
+
+.temperature-chart {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  right: 50px;
+  width: 40vw;
+  height: 40vh;
+}
+
+.timepicker {
+  margin: 5px 10px 0px 10px;
+  position: absolute;
+  right: 0px;
+}
+
+.light-time {
+  text-align: justify;
+  position: absolute;
+  top: 65%;
+  left: 50px;
+  width: 40vw;
+}
+
+.input-label {
+  color: white;
+  font-weight: bold;
+}
+
+.config {
+  text-align: justify;
+  font-weight: bold;
+  width: 70vw;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.div-table {
+  display: table;
+  width: auto;
+  background-color: #eee;
+  border: 1px solid #666666;
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.div-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;
+  width: 200px;
+  background-color: #ccc;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.top-header-margin {
+  height: 30%;
+  width: 100%;
+  padding: 100px 0px 0px 100px;
+}
+
+.header {
   color: white;
+  font-family: "Roboto";
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: xx-large;
+  margin: 5px 5px 5px 5px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.review-textarea {
+  resize: none;
+  border-radius: 12px;
+  padding: 5pt;
+  font-family: "Georgia";
+  font-size: medium;
+  /*   position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-button {
+  background-color: white;
+  border: 2px solid #4caf50;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 90%;
+  right: 50px;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #4caf50;
+  border: 2px solid white;
+  color: white;
 }
